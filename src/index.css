@@ -1,0 +1,177 @@
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;600;700;800;900&family=Space+Mono:wght@400;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 220 20% 6%;
+    --foreground: 180 100% 95%;
+
+    --card: 220 25% 10%;
+    --card-foreground: 180 100% 95%;
+
+    --popover: 220 25% 10%;
+    --popover-foreground: 180 100% 95%;
+
+    --primary: 180 100% 50%;
+    --primary-foreground: 220 20% 6%;
+
+    --secondary: 140 70% 45%;
+    --secondary-foreground: 220 20% 6%;
+
+    --muted: 220 20% 15%;
+    --muted-foreground: 180 30% 60%;
+
+    --accent: 280 100% 60%;
+    --accent-foreground: 220 20% 6%;
+
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 210 40% 98%;
+
+    --border: 180 50% 20%;
+    --input: 220 20% 15%;
+    --ring: 180 100% 50%;
+
+    --radius: 0.5rem;
+
+    /* Custom colors */
+    --neon-cyan: 180 100% 50%;
+    --neon-green: 140 100% 50%;
+    --neon-purple: 280 100% 60%;
+    --neon-pink: 320 100% 60%;
+    --dark-bg: 220 20% 6%;
+    --darker-bg: 220 25% 4%;
+    --circuit-color: 180 50% 15%;
+
+    /* Gradients */
+    --gradient-neon: linear-gradient(135deg, hsl(var(--neon-cyan)) 0%, hsl(var(--neon-green)) 50%, hsl(var(--neon-purple)) 100%);
+    --gradient-dark: linear-gradient(180deg, hsl(var(--dark-bg)) 0%, hsl(var(--darker-bg)) 100%);
+    --gradient-card: linear-gradient(145deg, hsl(var(--card)) 0%, hsl(220 25% 8%) 100%);
+
+    /* Shadows */
+    --shadow-neon: 0 0 20px hsl(var(--neon-cyan) / 0.5), 0 0 40px hsl(var(--neon-cyan) / 0.3);
+    --shadow-neon-green: 0 0 20px hsl(var(--neon-green) / 0.5), 0 0 40px hsl(var(--neon-green) / 0.3);
+    --shadow-glow: 0 0 60px hsl(var(--neon-cyan) / 0.2);
+
+    --sidebar-background: 0 0% 98%;
+    --sidebar-foreground: 240 5.3% 26.1%;
+    --sidebar-primary: 240 5.9% 10%;
+    --sidebar-primary-foreground: 0 0% 98%;
+    --sidebar-accent: 240 4.8% 95.9%;
+    --sidebar-accent-foreground: 240 5.9% 10%;
+    --sidebar-border: 220 13% 91%;
+    --sidebar-ring: 217.2 91.2% 59.8%;
+  }
+
+  .dark {
+    --background: 220 20% 6%;
+    --foreground: 180 100% 95%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground font-mono;
+    background: linear-gradient(180deg, hsl(var(--dark-bg)) 0%, hsl(var(--darker-bg)) 100%);
+  }
+}
+
+@layer utilities {
+  .font-orbitron {
+    font-family: 'Orbitron', sans-serif;
+  }
+
+  .font-space-mono {
+    font-family: 'Space Mono', monospace;
+  }
+
+  .text-gradient {
+    background: var(--gradient-neon);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
+
+  .neon-glow {
+    text-shadow: 0 0 10px hsl(var(--neon-cyan)), 0 0 20px hsl(var(--neon-cyan)), 0 0 40px hsl(var(--neon-cyan));
+  }
+
+  .neon-box {
+    box-shadow: var(--shadow-neon);
+  }
+
+  .neon-box-green {
+    box-shadow: var(--shadow-neon-green);
+  }
+
+  .circuit-pattern {
+    background-image: 
+      linear-gradient(hsl(var(--circuit-color)) 1px, transparent 1px),
+      linear-gradient(90deg, hsl(var(--circuit-color)) 1px, transparent 1px);
+    background-size: 50px 50px;
+  }
+
+  .animate-pulse-glow {
+    animation: pulse-glow 2s ease-in-out infinite;
+  }
+
+  .animate-float {
+    animation: float 6s ease-in-out infinite;
+  }
+
+  .animate-scan {
+    animation: scan 3s linear infinite;
+  }
+}
+
+@keyframes pulse-glow {
+  0%, 100% {
+    opacity: 1;
+    filter: brightness(1);
+  }
+  50% {
+    opacity: 0.8;
+    filter: brightness(1.2);
+  }
+}
+
+@keyframes float {
+  0%, 100% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-20px);
+  }
+}
+
+@keyframes scan {
+  0% {
+    background-position: 0% 0%;
+  }
+  100% {
+    background-position: 0% 100%;
+  }
+}
+
+@keyframes gradient-shift {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+.animate-gradient {
+  background-size: 200% 200%;
+  animation: gradient-shift 4s ease infinite;
+}
