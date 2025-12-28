@@ -1,3 +1,5 @@
+import keerthiImage from '../assets/keerthiimg.jpeg';
+
 const CoordinatorsSection = () => {
   const coordinators = [
     {
@@ -11,6 +13,7 @@ const CoordinatorsSection = () => {
     {
       name: "Keerthivarshini",
       role: "Coordinator 3",
+      image: keerthiImage,
     },
     {
       name: "Nirajan",
@@ -37,11 +40,21 @@ const CoordinatorsSection = () => {
               key={index}
               className="group relative bg-card/50 backdrop-blur-sm border border-border rounded-xl overflow-hidden hover:border-primary transition-all duration-300 hover:shadow-[0_0_30px_hsl(180_100%_50%/0.2)]"
             >
-              {/* Number Badge */}
+              {/* Image or Number Badge */}
               <div className="flex items-center justify-center py-8">
-                <div className="w-20 h-20 rounded-full bg-primary/10 border-2 border-primary flex items-center justify-center group-hover:bg-primary/20 transition-colors">
-                  <span className="font-orbitron text-3xl font-bold text-primary">{index + 1}</span>
-                </div>
+                {coordinator.image ? (
+                  <div className="w-48 h-48 rounded-full overflow-hidden border-2 border-primary group-hover:border-primary/80 transition-colors">
+                    <img 
+                      src={coordinator.image} 
+                      alt={coordinator.name}
+                      className="w-full h-full object-cover object-top"
+                    />
+                  </div>
+                ) : (
+                  <div className="w-20 h-20 rounded-full bg-primary/10 border-2 border-primary flex items-center justify-center group-hover:bg-primary/20 transition-colors">
+                    <span className="font-orbitron text-3xl font-bold text-primary">{index + 1}</span>
+                  </div>
+                )}
               </div>
 
               {/* Info */}
