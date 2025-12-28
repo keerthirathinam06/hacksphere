@@ -59,7 +59,9 @@ const Footer = () => {
             <ul className="space-y-3 font-mono text-sm">
               <li className="flex items-center gap-2 text-muted-foreground">
                 <Mail className="w-4 h-4 text-primary" />
-                hacksphere@skasc.ac.in
+                <a href="mailto:hacksphereskasc@gmail.com" className="hover:text-primary transition-colors">
+                  hacksphereskasc@gmail.com
+                </a>
               </li>
               <li className="flex items-start gap-2 text-muted-foreground">
                 <MapPin className="w-4 h-4 text-primary mt-1" />

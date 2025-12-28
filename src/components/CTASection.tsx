@@ -32,10 +32,15 @@ const CTASection = () => {
                 <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
               </Button>
             </a>
-            <Button variant="neon" size="lg">
-              Contact Us
-            </Button>
+            <a href="mailto:hacksphereskasc@gmail.com">
+              <Button variant="neon" size="lg">
+                Contact Us
+              </Button>
+            </a>
           </div>
+          <p className="font-mono text-muted-foreground text-sm mt-2">
+            For any query, press <span className="text-primary font-semibold">Contact Us</span> to email us.
+          </p>
 
           {/* Prize Highlight */}
           <div className="mt-16 max-w-xl mx-auto">
