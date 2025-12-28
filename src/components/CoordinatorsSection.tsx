@@ -12,7 +12,7 @@ const CoordinatorsSection = () => {
     },
     {
       name: "Keerthivarshini",
-      role: "Coordinator 3",
+      role: "Student Coordinator Tech Club",
       image: keerthiImage,
     },
     {
