@@ -38,9 +38,14 @@ const AboutSection = () => {
           <h2 className="font-orbitron text-4xl md:text-5xl font-bold text-foreground mb-6">
             Enter the <span className="text-gradient">Sphere</span>
           </h2>
-          <p className="font-mono text-muted-foreground max-w-3xl mx-auto text-lg">
-            HackSphere is not just a hackathon—it's a launchpad for the next generation of innovators. 
-            Join us in a 48-hour journey where creativity meets technology, and ideas become reality.
+          <p className="font-mono text-muted-foreground max-w-3xl mx-auto text-lg whitespace-pre-line">
+            Participants will work in teams to
+            solve real-world problems and
+            present their ideas before expert
+            judges. An Inter-College Hackathon aimed at
+            encouraging students to innovate,
+            collaborate, and build impactful
+            solutions using emerging technologies
           </p>
         </div>
 

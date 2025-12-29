@@ -1,6 +1,8 @@
 import { Button } from '@/components/ui/button';
 import { ChevronDown, ArrowRight } from 'lucide-react';
 import heroBg from '@/assets/hero-bg.jpg';
+import skLogo from '@/assets/sk.png';
+import iciLogo from '@/assets/ici.png';
 import { useState, useEffect } from 'react';
 import CountdownClock from '@/components/CountdownClock';
 
@@ -50,9 +52,13 @@ const HeroSection = () => {
       {/* Content */}
       <div className="relative z-10 container mx-auto px-4 text-center pt-20">
         <div className="animate-float">
-          <p className="font-orbitron text-primary text-xl md:text-3xl font-bold tracking-wide mb-4 neon-glow">
-            SRI KRISHNA ARTS AND SCIENCE COLLEGE
-          </p>
+          <div className="flex items-center justify-center gap-6 mb-4 flex-wrap">
+            <img src={iciLogo} alt="ICI" className="w-20 md:w-24 h-20 md:h-24 object-contain bg-transparent mr-4" />
+            <p className="font-orbitron text-primary text-xl md:text-3xl lg:text-4xl font-bold tracking-wide neon-glow">
+              SRI KRISHNA ARTS AND SCIENCE COLLEGE
+            </p>
+            <img src={skLogo} alt="SK" className="w-48 md:w-56 h-48 md:h-56 lg:w-72 lg:h-72 object-contain ml-4" />
+          </div>
           <p className="font-mono text-primary text-sm md:text-base mb-4 tracking-[0.3em] uppercase">
             &lt; Presents /&gt;
           </p>
@@ -65,11 +71,13 @@ const HeroSection = () => {
             Build your prototype, present your PPT, and showcase your demo
           </p>
           
-          <div className="flex items-center justify-center gap-2 font-mono text-primary mb-8">
+          <div className="flex items-center justify-center gap-4 font-mono text-primary mb-8">
             <span className="w-12 h-px bg-primary" />
             <span className="text-sm tracking-widest">OPEN INNOVATION 2026</span>
             <span className="w-12 h-px bg-primary" />
           </div>
+
+          <p className="text-sm text-muted-foreground mb-8 font-mono">Organized by Department of Computer Applications</p>
 
           {isRegistrationActive && (
             <div className="flex flex-col sm:flex-row gap-4 justify-center items-center mb-8">
