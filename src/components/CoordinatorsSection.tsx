@@ -1,6 +1,7 @@
 import { Phone, Mail } from 'lucide-react';
 import keerthiImage from '../assets/keerthiimg.jpeg';
 import sakthiImage from '../assets/Sakthi Sabareesh.jpeg';
+import rahulImage from '../assets/rahulimg.jpeg';
 import { IndexRouteObject } from 'react-router-dom';
 
 type Coordinator = {
@@ -14,24 +15,25 @@ type Coordinator = {
 const CoordinatorsSection = () => {
   const coordinators: Coordinator[] = [
     {
-      name: "Dr Malarkodi",
-      role: "Coordinator 1",
-    },
-    {
       name: "Sakthi Sabareesh",
       role: "Technical Lead Innovation Lab",
       image: sakthiImage,
+      phone: 7539917977,
+      email: "sakthisabareeshb24bca143@skasc.ac.in",
     },
     {
       name: "Keerthivarshini",
       role: "Student Coordinator Tech Club",
       image: keerthiImage,
       phone: 9489590773,
-      email: "keerthivarshinir@SparklesIcon.ac.in",
+      email: "keerthivarshinir24bcc126@skasc.ac.in",
     },
     {
-      name: "Nirajan",
+      name: "Rahul K",
       role: "Coordinator 4",
+      image: rahulImage,
+      phone: 7548831130,
+      email: "rahulk24bcc145@skasc.ac.in",
     }
   ];
 
