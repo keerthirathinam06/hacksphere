@@ -1,12 +1,13 @@
 import { Phone, Mail } from 'lucide-react';
 import keerthiImage from '../assets/keerthiimg.jpeg';
 import sakthiImage from '../assets/Sakthi Sabareesh.jpeg';
+import { IndexRouteObject } from 'react-router-dom';
 
 type Coordinator = {
   name: string;
   role: string;
   image?: string;
-  phone?: string;
+  phone?: number;
   email?: string;
 };
 
@@ -25,6 +26,8 @@ const CoordinatorsSection = () => {
       name: "Keerthivarshini",
       role: "Student Coordinator Tech Club",
       image: keerthiImage,
+      phone: 9489590773,
+      email: "keerthivarshinir@SparklesIcon.ac.in",
     },
     {
       name: "Nirajan",
