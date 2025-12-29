@@ -1,7 +1,7 @@
 import { Phone, Mail } from 'lucide-react';
 import keerthiImage from '../assets/keerthiimg.jpeg';
 import sakthiImage from '../assets/Sakthi Sabareesh.jpeg';
-import rahulImage from '../assets/rahulimg.jpeg';
+import rahulImage from '../assets/raghulimg.jpeg';
 import { IndexRouteObject } from 'react-router-dom';
 
 type Coordinator = {
@@ -29,7 +29,7 @@ const CoordinatorsSection = () => {
       email: "keerthivarshinir24bcc126@skasc.ac.in",
     },
     {
-      name: "Rahul K",
+      name: "Raghul K",
       role: "Coordinator 4",
       image: rahulImage,
       phone: 7548831130,
@@ -63,7 +63,7 @@ const CoordinatorsSection = () => {
                     <img 
                       src={coordinator.image} 
                       alt={coordinator.name}
-                      className="w-full h-full object-cover object-top"
+                      className={`w-full h-full object-cover ${coordinator.name === "Rahul K" ? "object-center scale-90" : "object-top"}`}
                     />
                   </div>
                 ) : (
