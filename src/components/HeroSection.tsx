@@ -44,28 +44,29 @@ const HeroSection = () => {
       {/* Circuit Pattern Overlay */}
       <div className="absolute inset-0 circuit-pattern opacity-20" />
 
-      {/* Animated Glow */}
-      <div className="absolute top-1/4 left-1/4 w-96 h-96 bg-neon-cyan/20 rounded-full blur-[100px] animate-pulse-glow" />
-      <div className="absolute bottom-1/4 right-1/4 w-96 h-96 bg-neon-green/20 rounded-full blur-[100px] animate-pulse-glow" style={{ animationDelay: '1s' }} />
+      {/* Enhanced Animated Glow with 3D effects */}
+      <div className="absolute top-1/4 left-1/4 w-96 h-96 bg-neon-cyan/25 rounded-full blur-[100px] animate-pulse-glow" />
+      <div className="absolute bottom-1/4 right-1/4 w-96 h-96 bg-neon-green/25 rounded-full blur-[100px] animate-pulse-glow" style={{ animationDelay: '1s' }} />
+      <div className="absolute top-1/3 right-1/3 w-80 h-80 bg-neon-purple/20 rounded-full blur-[120px] animate-pulse-glow" style={{ animationDelay: '0.5s' }} />
 
       {/* Content */}
-      <div className="relative z-10 container mx-auto px-4 text-center pt-20">
-        <div className="animate-float">
+      <div className="relative z-10 container mx-auto px-4 text-center pt-20 perspective">
+        <div>
           <div className="flex items-center justify-center gap-6 mb-4 flex-wrap">
-            <img src={skascLogo} alt="SKAC" className="w-32 h-32 rounded-full object-contain border-4 border-primary bg-white p-2 shadow-lg" />
-            <p className="font-orbitron text-primary text-xl md:text-3xl lg:text-4xl font-bold tracking-wide neon-glow">
+            <img src={skascLogo} alt="SKAC" className="w-32 h-32 rounded-full object-contain border-4 border-primary bg-white p-2 shadow-glow-lg hover-glow" />
+            <p className="font-orbitron text-primary text-xl md:text-3xl lg:text-4xl font-bold tracking-wide text-glow">
               SRI KRISHNA ARTS AND SCIENCE COLLEGE
             </p>
           </div>
-          <p className="font-mono text-primary text-sm md:text-base mb-4 tracking-[0.3em] uppercase">
+          <p className="font-mono text-primary text-sm md:text-base mb-4 tracking-[0.3em] uppercase animate-slide-in-left">
             &lt; Presents /&gt;
           </p>
           
-          <h1 className="font-orbitron text-5xl md:text-7xl lg:text-8xl font-black mb-6 text-gradient animate-gradient">
+          <h1 className="font-orbitron text-5xl md:text-7xl lg:text-8xl font-black mb-6 text-gradient-animated animate-bounce-in">
             HACKSPHERE
           </h1>
           
-          <p className="font-mono text-muted-foreground text-lg md:text-xl max-w-2xl mx-auto mb-4">
+          <p className="font-mono text-muted-foreground text-lg md:text-xl max-w-2xl mx-auto mb-4 animate-slide-in-right">
             Build your prototype, present your PPT, and showcase your demo
           </p>
           

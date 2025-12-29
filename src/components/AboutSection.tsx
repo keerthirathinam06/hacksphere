@@ -26,19 +26,19 @@ const AboutSection = () => {
   ];
 
   return (
-    <section id="about" className="py-24 relative overflow-hidden">
+    <section id="about" className="py-24 relative overflow-hidden perspective">
       {/* Background Elements */}
       <div className="absolute top-0 right-0 w-[600px] h-[600px] opacity-10">
-        <img src={chipGraphic} alt="" className="w-full h-full object-contain animate-float" />
+        <img src={chipGraphic} alt="" className="w-full h-full object-contain animate-float-3d hover-glow" />
       </div>
       
       <div className="container mx-auto px-4">
-        <div className="text-center mb-16">
-          <p className="font-mono text-primary text-sm tracking-[0.3em] mb-2">&lt; ABOUT /&gt;</p>
-          <h2 className="font-orbitron text-4xl md:text-5xl font-bold text-foreground mb-6">
-            Enter the <span className="text-gradient">Sphere</span>
+        <div className="text-center mb-16 animate-slide-in-left">
+          <p className="font-mono text-primary text-sm tracking-[0.3em] mb-2 text-glow">&lt; ABOUT /&gt;</p>
+          <h2 className="font-orbitron text-4xl md:text-5xl font-bold text-foreground mb-6 text-gradient-animated">
+            Enter the <span>Sphere</span>
           </h2>
-          <p className="font-mono text-muted-foreground max-w-3xl mx-auto text-lg whitespace-pre-line">
+          <p className="font-mono text-muted-foreground max-w-3xl mx-auto text-lg whitespace-pre-line animate-slide-in-right">
             Participants will work in teams to
             solve real-world problems and
             present their ideas before expert
@@ -53,10 +53,11 @@ const AboutSection = () => {
           {features.map((feature, index) => (
             <div 
               key={index}
-              className="group relative bg-card/50 backdrop-blur-sm border border-border rounded-lg p-6 hover:border-primary transition-all duration-300 hover:shadow-[0_0_30px_hsl(180_100%_50%/0.2)]"
+              className="group relative glass-effect rounded-lg p-6 hover-lift animate-bounce-in shadow-glow-sm"
+              style={{ animationDelay: `${index * 0.15}s` }}
             >
               <div className="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-transparent via-primary to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
-              <div className="text-primary mb-4 group-hover:neon-glow transition-all duration-300">
+              <div className="text-primary mb-4 group-hover:animate-glow-pulse transition-all duration-300 hover-glow">
                 {feature.icon}
               </div>
               <h3 className="font-orbitron text-lg font-bold text-foreground mb-2">

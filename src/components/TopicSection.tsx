@@ -20,21 +20,21 @@ const TopicSection = () => {
   ];
 
   return (
-    <section id="topic" className="py-24 relative overflow-hidden">
+    <section id="topic" className="py-24 relative overflow-hidden perspective">
       {/* Glow Effects */}
-      <div className="absolute top-1/2 left-0 w-96 h-96 bg-neon-cyan/10 rounded-full blur-[150px] -translate-y-1/2" />
-      <div className="absolute top-1/2 right-0 w-96 h-96 bg-neon-green/10 rounded-full blur-[150px] -translate-y-1/2" />
+      <div className="absolute top-1/2 left-0 w-96 h-96 bg-neon-cyan/10 rounded-full blur-[150px] -translate-y-1/2 animate-float-3d" />
+      <div className="absolute top-1/2 right-0 w-96 h-96 bg-neon-green/10 rounded-full blur-[150px] -translate-y-1/2 animate-pulse-glow" />
       
       <div className="container mx-auto px-4 relative z-10">
         <div className="grid lg:grid-cols-2 gap-12 items-center">
-          <div>
-            <p className="font-mono text-primary text-sm tracking-[0.3em] mb-2">&lt; THEME /&gt;</p>
-            <h2 className="font-orbitron text-4xl md:text-5xl font-bold text-foreground mb-6">
-              Open <span className="text-gradient">Innovation</span>
+          <div className="animate-slide-in-left">
+            <p className="font-mono text-primary text-sm tracking-[0.3em] mb-2 text-glow">&lt; THEME /&gt;</p>
+            <h2 className="font-orbitron text-4xl md:text-5xl font-bold text-foreground mb-6 text-gradient-animated">
+              Open <span>Innovation</span>
             </h2>
             
-            <div className="flex items-center gap-3 mb-6">
-              <Sparkles className="w-6 h-6 text-primary animate-pulse-glow" />
+            <div className="flex items-center gap-3 mb-6 animate-glow-pulse">
+              <Sparkles className="w-6 h-6 text-primary hover-glow" />
               <span className="font-orbitron text-lg text-primary">Unleash Your Creativity</span>
             </div>
 
@@ -49,11 +49,12 @@ const TopicSection = () => {
               {highlights.map((item, index) => (
                 <div 
                   key={index}
-                  className="flex items-start gap-4 p-4 bg-card/30 border border-border rounded-lg hover:border-primary/50 transition-all duration-300"
+                  className="flex items-start gap-4 p-4 glass-effect rounded-lg hover-lift shadow-glow-sm animate-bounce-in"
+                  style={{ animationDelay: `${index * 0.1}s` }}
                 >
-                  <div className="text-primary mt-1">{item.icon}</div>
+                  <div className="text-primary mt-1 hover-glow">{item.icon}</div>
                   <div>
-                    <h4 className="font-orbitron text-foreground font-bold mb-1">{item.title}</h4>
+                    <h4 className="font-orbitron text-foreground font-bold mb-1 group-hover:text-primary transition-colors">{item.title}</h4>
                     <p className="font-mono text-sm text-muted-foreground">{item.description}</p>
                   </div>
                 </div>
@@ -61,13 +62,13 @@ const TopicSection = () => {
             </div>
           </div>
 
-          <div className="relative">
-            <div className="relative bg-card/50 backdrop-blur-sm border border-border rounded-2xl p-8 overflow-hidden">
-              <div className="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-neon-cyan via-neon-green to-neon-purple" />
+          <div className="relative animate-slide-in-right">
+            <div className="relative glass-effect-dark rounded-2xl p-8 overflow-hidden hover-lift shadow-glow-md">
+              <div className="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-neon-cyan via-neon-green to-neon-purple animate-shimmer" />
               
               <div className="text-center mb-8">
-                <p className="font-mono text-primary text-sm mb-2">WHAT WE'RE LOOKING FOR</p>
-                <h3 className="font-orbitron text-2xl font-bold text-foreground">
+                <p className="font-mono text-primary text-sm mb-2 text-glow">WHAT WE'RE LOOKING FOR</p>
+                <h3 className="font-orbitron text-2xl font-bold text-gradient-animated">
                   Innovation Criteria
                 </h3>
               </div>
