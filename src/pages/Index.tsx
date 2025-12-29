@@ -5,6 +5,7 @@ import TimelineSection from '@/components/TimelineSection';
 import TopicSection from '@/components/TopicSection';
 import ResourcesSection from '@/components/ResourcesSection';
 import CoordinatorsSection from '@/components/CoordinatorsSection';
+import ChiefGuest from '@/components/ChiefGuest';
 import CTASection from '@/components/CTASection';
 import Footer from '@/components/Footer';
 
@@ -17,6 +18,7 @@ const Index = () => {
       <TimelineSection />
       <TopicSection />
       <ResourcesSection />
+      <ChiefGuest />
       <CoordinatorsSection />
       <CTASection />
       <Footer />
