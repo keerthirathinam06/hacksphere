@@ -1,5 +1,6 @@
 import { Button } from '@/components/ui/button';
-import { ArrowRight } from 'lucide-react';
+import { ArrowRight, Download } from 'lucide-react';
+import brochure from '../assets/brochure.pdf';
 import CountdownClock from '@/components/CountdownClock';
 
 const CTASection = () => {
@@ -32,6 +33,14 @@ const CTASection = () => {
                 <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
               </Button>
             </a>
+
+            <a href={brochure} download>
+              <Button variant="outline" size="lg" className="flex items-center gap-2">
+                <Download className="w-4 h-4" />
+                Download Brochure
+              </Button>
+            </a>
+
             <a href="mailto:hacksphereskasc@gmail.com">
               <Button variant="neon" size="lg">
                 Contact Us
