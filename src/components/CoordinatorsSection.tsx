@@ -1,14 +1,25 @@
+import { Phone, Mail } from 'lucide-react';
 import keerthiImage from '../assets/keerthiimg.jpeg';
+import sakthiImage from '../assets/Sakthi Sabareesh.jpeg';
+
+type Coordinator = {
+  name: string;
+  role: string;
+  image?: string;
+  phone?: string;
+  email?: string;
+};
 
 const CoordinatorsSection = () => {
-  const coordinators = [
+  const coordinators: Coordinator[] = [
     {
       name: "Dr Malarkodi",
       role: "Coordinator 1",
     },
     {
       name: "Sakthi Sabareesh",
-      role: "Coordinator 2",
+      role: "Technical Lead Innovation Lab",
+      image: sakthiImage,
     },
     {
       name: "Keerthivarshini",
@@ -63,6 +74,44 @@ const CoordinatorsSection = () => {
                   {coordinator.name}
                 </h3>
                 <p className="font-mono text-sm text-primary">{coordinator.role}</p>
+                <div className="mt-4 flex items-center justify-center gap-3">
+                  {coordinator.phone ? (
+                    <a 
+                      href={`tel:${coordinator.phone}`} 
+                      className="flex items-center justify-center w-10 h-10 rounded-lg bg-primary/10 border border-primary/30 text-primary hover:bg-primary hover:text-background transition-all duration-300 hover:shadow-[0_0_15px_hsl(180_100%_50%/0.3)]" 
+                      aria-label={`Call ${coordinator.name}`} 
+                      title="Call"
+                    >
+                      <Phone className="w-5 h-5" />
+                    </a>
+                  ) : (
+                    <button 
+                      disabled 
+                      className="flex items-center justify-center w-10 h-10 rounded-lg bg-muted/20 border border-border text-muted-foreground/40 cursor-not-allowed" 
+                      title="Call"
+                    >
+                      <Phone className="w-5 h-5" />
+                    </button>
+                  )}
+                  {coordinator.email ? (
+                    <a 
+                      href={`mailto:${coordinator.email}`} 
+                      className="flex items-center justify-center w-10 h-10 rounded-lg bg-primary/10 border border-primary/30 text-primary hover:bg-primary hover:text-background transition-all duration-300 hover:shadow-[0_0_15px_hsl(180_100%_50%/0.3)]" 
+                      aria-label={`Email ${coordinator.name}`} 
+                      title="Email"
+                    >
+                      <Mail className="w-5 h-5" />
+                    </a>
+                  ) : (
+                    <button 
+                      disabled 
+                      className="flex items-center justify-center w-10 h-10 rounded-lg bg-muted/20 border border-border text-muted-foreground/40 cursor-not-allowed" 
+                      title="Email"
+                    >
+                      <Mail className="w-5 h-5" />
+                    </button>
+                  )}
+                </div>
               </div>
             </div>
           ))}
