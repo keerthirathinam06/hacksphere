@@ -53,16 +53,17 @@ const CoordinatorsSection = () => {
           {coordinators.map((coordinator, index) => (
             <div 
               key={index}
-              className="group relative bg-card/50 backdrop-blur-sm border border-border rounded-xl overflow-hidden hover:border-primary transition-all duration-300 hover:shadow-[0_0_30px_hsl(180_100%_50%/0.2)] w-full sm:w-80"
+              className="group relative glass-effect-dark rounded-2xl overflow-hidden hover-lift w-full sm:w-80 animate-bounce-in"
+              style={{ animationDelay: `${index * 0.2}s` }}
             >
               {/* Image or Number Badge */}
               <div className="flex items-center justify-center py-8">
                 {coordinator.image ? (
-                  <div className="w-48 h-48 rounded-full overflow-hidden border-2 border-primary group-hover:border-primary/80 transition-colors">
+                  <div className="w-48 h-48 rounded-full overflow-hidden border-2 border-primary group-hover:border-primary/80 transition-all duration-500 shadow-glow-md group-hover:animate-glow-pulse">
                     <img 
                       src={coordinator.image} 
                       alt={coordinator.name}
-                      className={`w-full h-full object-cover ${coordinator.name === "Rahul K" ? "object-center scale-90" : "object-top"}`}
+                      className={`w-full h-full object-cover transition-transform duration-500 group-hover:scale-110 ${coordinator.name === "Rahul K" ? "object-center scale-90" : "object-top"}`}
                     />
                   </div>
                 ) : (
