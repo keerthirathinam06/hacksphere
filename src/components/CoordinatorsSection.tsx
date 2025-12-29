@@ -1,7 +1,7 @@
 import { Phone, Mail } from 'lucide-react';
 import keerthiImage from '../assets/keerthiimg.jpeg';
 import sakthiImage from '../assets/Sakthi Sabareesh.jpeg';
-import raghulImage from '../assets/rahulimg.jpeg';
+import raghulImage from '../assets/raghulimg.jpeg';
 
 type Coordinator = {
   name: string;
