@@ -30,7 +30,7 @@ const CoordinatorsSection = () => {
     {
       name: "Rahul K",
       role: "Coordinator 4",
-      image: rahulImage,
+      image: raghulImage,
       phone: 7548831130,
       email: "rahulk24bcc145@skasc.ac.in",
     }
@@ -63,7 +63,7 @@ const CoordinatorsSection = () => {
                     <img 
                       src={coordinator.image} 
                       alt={coordinator.name}
-                      className={`w-full h-full object-cover transition-transform duration-500 group-hover:scale-110 ${coordinator.name === "Rahul K" ? "object-center scale-90" : "object-top"}`}
+                      className={`w-full h-full object-cover transition-transform duration-500 group-hover:scale-110 ${coordinator.name === "Rahul K" ? "object-top scale-125" : "object-top"}`}
                     />
                   </div>
                 ) : (
