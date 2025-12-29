@@ -50,11 +50,11 @@ const CoordinatorsSection = () => {
           </p>
         </div>
 
-        <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+        <div className="flex flex-wrap items-center justify-center gap-8 max-w-5xl mx-auto">
           {coordinators.map((coordinator, index) => (
             <div 
               key={index}
-              className="group relative bg-card/50 backdrop-blur-sm border border-border rounded-xl overflow-hidden hover:border-primary transition-all duration-300 hover:shadow-[0_0_30px_hsl(180_100%_50%/0.2)]"
+              className="group relative bg-card/50 backdrop-blur-sm border border-border rounded-xl overflow-hidden hover:border-primary transition-all duration-300 hover:shadow-[0_0_30px_hsl(180_100%_50%/0.2)] w-full sm:w-80"
             >
               {/* Image or Number Badge */}
               <div className="flex items-center justify-center py-8">
