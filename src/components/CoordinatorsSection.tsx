@@ -1,7 +1,7 @@
 import { Phone, Mail } from 'lucide-react';
 import keerthiImage from '../assets/keerthiimg.jpeg';
 import sakthiImage from '../assets/Sakthi Sabareesh.jpeg';
-import rahulImage from '../assets/rahulimg.jpeg';
+import raghulImage from '../assets/rahulimg.jpeg';
 
 type Coordinator = {
   name: string;
@@ -29,7 +29,7 @@ const CoordinatorsSection = () => {
     },
     {
       name: "Rahul K",
-      role: "Review panel ",
+      role: "Coordinator 4",
       image: rahulImage,
       phone: 7548831130,
       email: "rahulk24bcc145@skasc.ac.in",
@@ -62,7 +62,7 @@ const CoordinatorsSection = () => {
                     <img 
                       src={coordinator.image} 
                       alt={coordinator.name}
-                      className="w-full h-full object-cover object-top"
+                      className={`w-full h-full object-cover ${coordinator.name === "Rahul K" ? "object-center scale-90" : "object-top"}`}
                     />
                   </div>
                 ) : (

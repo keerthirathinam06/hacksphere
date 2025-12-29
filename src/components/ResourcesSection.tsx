@@ -1,5 +1,6 @@
 import { Button } from '@/components/ui/button';
 import { FileText, Presentation, Download, ExternalLink, BookOpen } from 'lucide-react';
+import eventBrochure from '@/assets/eventbrochure.pdf';
 
 const ResourcesSection = () => {
   const resources = [
@@ -9,7 +10,7 @@ const ResourcesSection = () => {
       description: "Complete event details and information brochure",
       buttonText: "Download Brochure",
       type: "download",
-      downloadUrl: "/files/hacksphere-brochure.pdf"
+      downloadUrl: eventBrochure
     },
     {
       icon: <Presentation className="w-12 h-12" />,
