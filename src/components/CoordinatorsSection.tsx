@@ -103,7 +103,7 @@ const CoordinatorsSection = () => {
                       href={`mailto:${coordinator.email}`} 
                       className="flex items-center justify-center w-10 h-10 rounded-lg bg-primary/10 border border-primary/30 text-primary hover:bg-primary hover:text-background transition-all duration-300 hover:shadow-[0_0_15px_hsl(180_100%_50%/0.3)]" 
                       aria-label={`Email ${coordinator.name}`} 
-                      title="Email"
+                      title={`Email: ${coordinator.email}`}
                     >
                       <Mail className="w-5 h-5" />
                     </a>
