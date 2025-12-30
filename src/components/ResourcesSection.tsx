@@ -18,7 +18,7 @@ const ResourcesSection = () => {
       description: "Professional presentation template for your pitch deck",
       buttonText: "Download Template",
       type: "download",
-      downloadUrl: "/files/hacksphere-ppt-template.pptx"
+      downloadUrl: "/Hacksphere_Final_PPT_NEW.pptx"
     },
     {
       icon: <FileText className="w-12 h-12" />,
@@ -26,7 +26,7 @@ const ResourcesSection = () => {
       description: "Complete hackathon rules and participation guidelines",
       buttonText: "Download Rules PDF",
       type: "download",
-      downloadUrl: "/files/hacksphere-rules.pdf"
+      downloadUrl: "/Hackshere_General_Rules.docx"
     }
   ];
 

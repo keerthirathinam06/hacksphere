@@ -40,7 +40,7 @@ const Navbar = () => {
               {link.label}
             </a>
           ))}
-          <a href="https://docs.google.com/forms/d/e/1FAIpQLScEmKyvSJ6uZq7yvNTvVPG1sUxpvb9C6iRQUeleLXS8SB3IRQ/viewform?usp=publish-editor" target="_blank" rel="noopener noreferrer">
+          <a href="https://docs.google.com/forms/d/e/1FAIpQLSevYcxirDfzMj_hmP8Aqq9_kU4Li02TTCLDxdRZevrBossJ5A/viewform?usp=header" target="_blank" rel="noopener noreferrer">
             <Button variant="neon" size="sm">
               Register Now
             </Button>
@@ -70,7 +70,7 @@ const Navbar = () => {
                 {link.label}
               </a>
             ))}
-            <a href="https://docs.google.com/forms/d/e/1FAIpQLScEmKyvSJ6uZq7yvNTvVPG1sUxpvb9C6iRQUeleLXS8SB3IRQ/viewform?usp=publish-editor" target="_blank" rel="noopener noreferrer">
+            <a href="https://docs.google.com/forms/d/e/1FAIpQLSevYcxirDfzMj_hmP8Aqq9_kU4Li02TTCLDxdRZevrBossJ5A/viewform?usp=header" target="_blank" rel="noopener noreferrer">
               <Button variant="neon" size="sm" className="w-fit">
                 Register Now
               </Button>

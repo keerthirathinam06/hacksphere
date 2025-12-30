@@ -14,14 +14,14 @@ type Coordinator = {
 const CoordinatorsSection = () => {
   const coordinators: Coordinator[] = [
     {
-      name: "Sakthi Sabareesh",
+      name: "Sakthi Sabareesh B",
       role: "Coordinator lead",
       image: sakthiImage,
       phone: 7539917977,
       email: "sakthisabareeshb24bca143@skasc.ac.in",
     },
     {
-      name: "Keerthivarshini",
+      name: "Keerthivarshini R",
       role: "Registration committee",
       image: keerthiImage,
       phone: 9489590773,
