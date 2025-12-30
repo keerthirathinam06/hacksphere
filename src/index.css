@@ -309,15 +309,17 @@
 
 /* Glassmorphism */
 .glass-effect {
-  background: rgba(220, 20, 6, 0.1);
+  background: linear-gradient(145deg, hsl(var(--card) / 0.75), hsl(220 30% 8% / 0.8));
   backdrop-filter: blur(10px);
-  border: 1px solid rgba(180, 100, 50, 0.2);
+  border: 1px solid hsl(var(--primary) / 0.2);
+  box-shadow: 0 10px 40px hsl(var(--primary) / 0.08);
 }
 
 .glass-effect-dark {
-  background: rgba(10, 20, 30, 0.3);
+  background: linear-gradient(145deg, hsl(220 30% 10% / 0.85), hsl(220 25% 6% / 0.9));
   backdrop-filter: blur(15px);
-  border: 1px solid rgba(180, 100, 50, 0.1);
+  border: 1px solid hsl(var(--primary) / 0.25);
+  box-shadow: 0 12px 45px hsl(var(--primary) / 0.1);
 }
 
 /* 3D Perspective */
