@@ -25,14 +25,14 @@ const CoordinatorsSection = () => {
       role: "Registration committee",
       image: keerthiImage,
       phone: 9489590773,
-      email: "keerthivarshinir24bcc126@skasc.ac.in",
+      email: "keerthivarshinir24bcc125@skasc.ac.in",
     },
     {
       name: "Rahul K",
       role: "Coordinator 4",
       image: raghulImage,
       phone: 7548831130,
-      email: "rahulk24bcc145@skasc.ac.in",
+      email: "raghulk24bcc145@skasc.ac.in",
     }
   ];
 
