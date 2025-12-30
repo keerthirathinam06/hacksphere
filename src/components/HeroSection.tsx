@@ -2,6 +2,7 @@ import { Button } from '@/components/ui/button';
 import { ChevronDown, ArrowRight } from 'lucide-react';
 import heroBg from '@/assets/hero-bg.jpg';
 import skascLogo from '@/assets/skascimg.png';
+import iicLogo from '@/assets/iic.png';
 import { useState, useEffect } from 'react';
 import CountdownClock from '@/components/CountdownClock';
 
@@ -58,8 +59,19 @@ const HeroSection = () => {
               SRI KRISHNA ARTS AND SCIENCE COLLEGE
             </p>
           </div>
+          <div className="flex items-center justify-center gap-4 mb-2 animate-slide-in-left">
+            <img src={iicLogo} alt="IIC Logo" className="w-20 h-20 md:w-24 md:h-24 rounded-full object-contain border-4 border-primary bg-white p-2 shadow-glow-lg hover-glow" />
+            <div>
+              <p className="font-mono text-muted-foreground text-xs md:text-sm mb-1">
+                In association with Institution's Innovation Council
+              </p>
+              <p className="font-mono text-muted-foreground text-xs md:text-sm">
+                Department of Computer Applications
+              </p>
+            </div>
+          </div>
           <p className="font-mono text-primary text-sm md:text-base mb-4 tracking-[0.3em] uppercase animate-slide-in-left">
-            &lt; Presents /&gt;
+            &lt; Organizes /&gt;
           </p>
           
           <h1 className="font-orbitron text-5xl md:text-7xl lg:text-8xl font-black mb-6 text-gradient-animated animate-bounce-in">
