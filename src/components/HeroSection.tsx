@@ -14,8 +14,8 @@ const HeroSection = () => {
       const now = new Date();
       const year = now.getFullYear();
       
-      // Jan 12, 2026 at 11:59 PM
-      const registrationEnd = new Date(year, 0, 12, 23, 59, 59);
+      // Jan 18, 2026 at 11:59 PM
+      const registrationEnd = new Date(year, 0, 18, 23, 59, 59);
       
       // If we're past the registration end date, set to next year
       if (now > registrationEnd) {
@@ -92,7 +92,7 @@ const HeroSection = () => {
 
           {isRegistrationActive && (
             <div className="flex flex-col sm:flex-row gap-4 justify-center items-center mb-8">
-              <a href="https://docs.google.com/forms/d/e/1FAIpQLScEmKyvSJ6uZq7yvNTvVPG1sUxpvb9C6iRQUeleLXS8SB3IRQ/viewform?usp=publish-editor" target="_blank" rel="noopener noreferrer">
+              <a href="https://docs.google.com/forms/d/e/1FAIpQLSevYcxirDfzMj_hmP8Aqq9_kU4Li02TTCLDxdRZevrBossJ5A/viewform?usp=header" target="_blank" rel="noopener noreferrer">
                 <Button variant="hero" size="xl" className="group">
                   Register Now
                   <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />

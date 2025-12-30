@@ -10,7 +10,7 @@ const TimelineSection = () => {
       color: "primary"
     },
     {
-      date: "JAN 12, 2026",
+      date: "JAN 18, 2026",
       title: "Registration Closes",
       description: "Last day to submit your registration",
       status: "upcoming",

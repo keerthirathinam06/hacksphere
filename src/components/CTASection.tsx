@@ -23,11 +23,11 @@ const CTASection = () => {
 
           <p className="font-mono text-muted-foreground text-lg mb-12 max-w-2xl mx-auto animate-slide-in-right">
             Join hundreds of innovators and build something extraordinary. 
-            Registration closes January 12, 2026.
+            Registration closes January 18, 2026.
           </p>
 
           <div className="flex flex-col sm:flex-row gap-4 justify-center animate-bounce-in" style={{ animationDelay: '0.2s' }}>
-            <a href="https://docs.google.com/forms/d/e/1FAIpQLScEmKyvSJ6uZq7yvNTvVPG1sUxpvb9C6iRQUeleLXS8SB3IRQ/viewform?usp=publish-editor" target="_blank" rel="noopener noreferrer">
+            <a href="https://docs.google.com/forms/d/e/1FAIpQLSevYcxirDfzMj_hmP8Aqq9_kU4Li02TTCLDxdRZevrBossJ5A/viewform?usp=header" target="_blank" rel="noopener noreferrer">
               <Button variant="hero" size="xl" className="group hover-lift hover:shadow-glow-lg transition-all duration-300">
                 Register Your Team
                 <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
